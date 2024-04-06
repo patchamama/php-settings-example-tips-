@@ -20,3 +20,46 @@ php <script.php>
 # Ejecutar un servidor web con php (sin necesidad de apache). Sí hay un index.php, se mostraría automáticamente en el navegador al visitar http://localhost:8080
 php -S localhost:8080
 ```
+
+## El lenguaje
+
+```php
+// Equivalente a <?php echo "Hola mundo"; ?>, es decir <?php con echo...
+<?= "Hola mundo!"; ?>
+
+// Para las variables se puede usar camelCase o snake_case, mejor camelCase
+
+// Saber un tipo de dato y su valor (var_dump)
+<?php
+  $name = "Hola";
+  $numero = 4;
+  $isTrue = true;
+  $age = 44;
+
+ var_dump($name);    // string(4) Hola
+ var_dump($numero);  // int(4)
+ var_dump(isTrue);   // bool(true)
+
+ // también se puede usar echo gettype(var)
+ echo gettype($name);  // string
+ is_string($name);     // true
+
+ // typecasting. Se agrega el tipo entre paréntesis antes
+ echo (bool) "Pepe"; // true
+ echo (int) "Jose";  // 0
+
+ // Imprimir valor de variables en string (debe de estar la string o variable entre comillas dobles)
+ echo "$name tiene $age años";
+ $output = "$name tiene $age años";
+ echo $output;
+ $output .= ", y está desempleado." //concatenación
+?>
+
+// Constantes (no hay que poner el símbolo de dólar antes
+define('PI', 3.14)     // constante global
+const NOMBRE = "Pablo" // constante local
+<?= NOMBRE ?>
+
+
+
+```
