@@ -74,4 +74,12 @@ if (cond1) {
 <?php else : ?>
   <h3>Ejemplo de código3</h3>
 <?php endif; ?>
+
+// Ternearias
+$age = 13;
+$isOld = $age > 40;
+$outputOld = $IsOld
+  ? "Es viejo"
+  : "Es jóven";
+<h2><?= $outputOld ?></h2> 
 ```
