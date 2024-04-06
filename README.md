@@ -81,5 +81,21 @@ $isOld = $age > 40;
 $outputOld = $IsOld
   ? "Es viejo"
   : "Es jóven";
-<h2><?= $outputOld ?></h2> 
+<h2><?= $outputOld ?></h2>
+
+// match como mejor alternativa a switch
+$output = match($age) {
+   0, 1, 2, 3 => "es un bebé",
+   4, 5, 6, 7, 8, 9, 10, 11 => "es un niño",
+   12, 13, 14, 15, 16, 17, 18 => "es un adolescente",
+   default => "es un adulto",
+}
+
+// aún mejor con match poniendo condiciones 
+$output = match(true) {
+  $age <= 3 => "es un bebé",
+  $age <= 11 => "es un niño",
+  $age <= 18 => "es un adolescente",
+  default => "es un adulto",
+}
 ```
