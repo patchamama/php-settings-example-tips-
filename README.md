@@ -16,7 +16,7 @@ php -r "echo 'Hola mundo!'"
 # Ejecutar script
 php <script.php>
 
-# Ejecutar un servidor web con php (sin necesidad de apache)
+# Ejecutar un servidor web con php (sin necesidad de apache). Sí hay un index.php, se mostraría automáticamente en el navegador al visitar http://localhost:8080
 php -S localhost:8080
 
  
