@@ -137,6 +137,21 @@ $person["name"] = "pedro";
 $person["languages"][] = "java";
 
 // Acceso a API
-// Ver usando curl o get_file_content()
+const API_URL = "https://whenisthenextmcufilm.com/api";
+# Inicializar una nueva sesión de cURL; ch = cURL handle
+$ch = curl_init(API_URL);
+// Indicar que queremos recibir el resultado de la petición y no mostrarla en pantalla
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+/* Ejecutar la petición
+  y guardamos el resultado
+*/
+$result = curl_exec($ch);
+
+// una alternativa sería utilizar file_get_contents
+// $result = file_get_contents(API_URL); // si solo quieres hacer un GET de una API
+
+$data = json_decode($result, true);
+
+curl_close($ch);
 ?>
 ```
