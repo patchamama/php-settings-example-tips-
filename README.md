@@ -108,5 +108,19 @@ $languagesProg = ["PHP", "Javascript", 1, 2]
 $languagesProg[3] = "Java" // sustituye 2 por Java
 $languagesProg[] = "TypeScript" // agrega al final typescript
 <h3>El mejor lenguaje de programación es <?= $languagesProg[0] ?>.</h3>
+
+// Iterar array
+<ul>
+  <?php foreach($languagesProg as $lang) : ?>
+    <li><?= $lang ?></li>
+  <?php endforeach; ?>
+</ul>
+
+// Iterar con índice
+<ul>
+  <?php foreach($languagesProg as $key => $lang) : ?>
+    <li><?= $key . " " . $lang ?></li>
+  <?php endforeach; ?>
+</ul>
 ?>
 ```
