@@ -76,14 +76,17 @@ if (cond1) {
 <?php endif; ?>
 
 // Ternearias
+<?php
 $age = 13;
 $isOld = $age > 40;
 $outputOld = $IsOld
   ? "Es viejo"
   : "Es jóven";
+?>
 <h2><?= $outputOld ?></h2>
 
 // match como mejor alternativa a switch
+<?php
 $output = match($age) {
    0, 1, 2, 3 => "es un bebé",
    4, 5, 6, 7, 8, 9, 10, 11 => "es un niño",
@@ -98,4 +101,5 @@ $output = match(true) {
   $age <= 18 => "es un adolescente",
   default => "es un adulto",
 }
+?>
 ```
