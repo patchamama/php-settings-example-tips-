@@ -122,5 +122,16 @@ $languagesProg[] = "TypeScript" // agrega al final typescript
     <li><?= $key . " " . $lang ?></li>
   <?php endforeach; ?>
 </ul>
+
+// array asociativo, similar a un diccionario
+$person = [
+  "name" => "miguel",
+  "age"  => 42,
+  "isDev" => true,
+  "languages" => ["php", "javascript", "python"]
+];
+$person["name"] = "pedro";
+$person["languages"][] = "java";
+
 ?>
 ```
