@@ -60,6 +60,18 @@ define('PI', 3.14)     // constante global
 const NOMBRE = "Pablo" // constante local
 <?= NOMBRE ?>
 
+// Condición If (se puede usar "elseif" o "else if" 
+if (cond1) {
+} elseif (cond2) {
+} else {
+}
 
-
+// Sí se usa de esta forma no se puede usar "else if"
+<?php if (cond1) : ?>
+  <h3>Ejemplo de código1</h3>
+<?php elseif (cond2) : ?>
+  <h3>Ejemplo de código2</h3>
+<?php else : ?>
+  <h3>Ejemplo de código3</h3>
+<?php endif; ?>
 ```
