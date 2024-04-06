@@ -1,5 +1,7 @@
 # php-settings-example-tips-
 
+Actualización a partir de video de midudev: https://www.youtube.com/watch?v=BcGAPkjt_IE
+
 ## Instrucciones de ejecución insteresantes desde línea de comando
 ```bash
 # Instalación MacOsX (windows ver xampp o wampp)
@@ -134,5 +136,7 @@ $person = [
 $person["name"] = "pedro";
 $person["languages"][] = "java";
 
+// Acceso a API
+// Ver usando curl o get_file_content()
 ?>
 ```
