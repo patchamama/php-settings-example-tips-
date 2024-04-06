@@ -92,14 +92,21 @@ $output = match($age) {
    4, 5, 6, 7, 8, 9, 10, 11   => "es un niño",
    12, 13, 14, 15, 16, 17, 18 => "es un adolescente",
    default                    => "es un adulto",
-}
+};
 
 // aún mejor con match poniendo condiciones 
 $output = match(true) {
-  $age <= 3  => "es un bebé",
-  $age <= 11 => "es un niño",
-  $age <= 18 => "es un adolescente",
+  $age <= 3   => "es un bebé",
+  $age <= 11  => "es un niño",
+  $age <= 18  => "es un adolescente",
   default     => "es un adulto",
-}
+};
+
+// Arrays
+$example = array("Hola", 1, true)
+$languagesProg = ["PHP", "Javascript", 1, 2]
+$languagesProg[3] = "Java" // sustituye 2 por Java
+$languagesProg[] = "TypeScript" // agrega al final typescript
+<h3>El mejor lenguaje de programación es <?= $languagesProg[0] ?>.</h3>
 ?>
 ```
