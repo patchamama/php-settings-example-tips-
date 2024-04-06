@@ -123,6 +123,7 @@ $languagesProg[] = "TypeScript" // agrega al final typescript
   <?php endforeach; ?>
 </ul>
 
+<?php
 // array asociativo, similar a un diccionario
 $person = [
   "name" => "miguel",
