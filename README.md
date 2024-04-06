@@ -1,6 +1,6 @@
 # php-settings-example-tips-
 
-```php
+```bash
 # Instalación MacOsX (windows ver xampp o wampp)
 brew install php
 
